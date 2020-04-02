@@ -1,0 +1,167 @@
+/*
+	Hex: E2495B / C4BA3B / F4ED6E / FFFEE6
+*/
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+	font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+}
+
+.navbar {
+  background:#E2495B;
+}
+
+.nav-link, .navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+#container-8E7C68{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #8E7C68;
+}
+#container-ED7458{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #ED7458;
+}
+#container-FFDC9F{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #FFDC9F;
+}
+#container-DDC9BC{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #DDC9BC;
+}
+#container-7F056E{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #7F056E;
+}
+#container-ABDFF1{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #ABDFF1;
+}
+#container-EF6C33{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #EF6C33;
+}
+#container-928490{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #928490;
+}
+#container-DBC1AD{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #DBC1AD;
+}
+#container-F6C026{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #F6C026;
+}
+#container-A0D3F9{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #A0D3F9;
+}
+#container-CFDB31{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #CFDB31;
+}
+#main_title{
+	color: #ffffff;
+	width: 100%;
+	height: 50%;
+}
+#main_title h1{
+	margin-top: 20px;
+	font-size: 8em;
+	font-style: italic;
+	font-family: "Times New Roman", Times, serif;
+}
+#main_title h3{
+	font-size: 5em;
+	font-style: italic;
+}
+#main_image{
+	width: 30%;
+	height: 100%;
+    float: left;    
+}
+#main_image img{
+	margin-top: 20px;
+	width:100%; 
+    height:100%; 
+    object-fit:contain; 
+}
+#main_text{
+	width: 70%;
+	height: 100%;
+	float: right;
+}
+#song-content{
+	border-top: 2em solid black;
+	border-bottom: 1em solid black;
+	width: 100%;
+	height: auto;
+	min-height: 30%;
+	margin-top: 50px;
+	background: #D3D3D3; 
+}
+#text{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 30px;	
+}
+#footer{
+	margin-top: 30px;
+	background: #E0E0E0;
+}
+#about_us{
+	width: 70%;
+	float: left;
+}
+#contact_form{
+	width: 30%;
+	float: right;
+}
+#form{
+	margin-bottom: 30px;
+	margin-right: 30px;
+}
