@@ -18,6 +18,8 @@
 	</div>
 <div id="song-content">
 	<div id="text">
+		<h2> Hi, <?php echo $_SESSION['user_name_first'] ?>! If you have something new to upload, you can do it <a href="upload.php">here</a></h2>
+		<h2> or check our song list below</h2>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel risus vel lacus pellentesque eleifend. Cras eget aliquet nisl. Donec sodales erat risus, vitae eleifend tortor faucibus sit amet. Praesent ut mauris arcu. Aenean sodales ex eu dignissim sollicitudin. Phasellus finibus a diam ut vulputate. Fusce eget ex sem. Vivamus pharetra tincidunt neque, ac viverra lectus luctus ut. Quisque ac hendrerit tellus, egestas pretium dolor. Praesent arcu ligula, vulputate quis ipsum ut, viverra semper orci. Duis non feugiat arcu. Curabitur nec imperdiet lectus, non mollis neque. Ut fringilla ipsum ut scelerisque eleifend. Nullam suscipit nibh nec elit sollicitudin, ut hendrerit est rhoncus. Integer tempus elit turpis, a ultricies ex dignissim nec. 
 		Aenean sit amet ipsum nulla. Aenean vitae enim nibh. Quisque id consectetur nibh, mattis luctus enim. Sed eget nibh vestibulum, dictum lectus quis, euismod leo. Ut hendrerit lorem et accumsan ornare. Cras sit amet diam lacus. Donec ullamcorper eget arcu ut eleifend. Duis sollicitudin odio malesuada augue luctus, vel condimentum mauris ultrices. Duis viverra ipsum sit amet justo placerat fermentum. Duis feugiat erat id velit interdum, nec porttitor justo laoreet. 
 		<p>

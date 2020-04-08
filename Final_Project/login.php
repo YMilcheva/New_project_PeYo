@@ -47,16 +47,18 @@
             	if(isset($_POST['submit']) && strlen($_POST['username']) > 0 && strlen($_POST['password']) > 0){
             		$user_name = trim(htmlentities($_POST['username']));
 					$password = trim(htmlentities($_POST['password']));
-					$sql = "SELECT user_password, user_name_first, user_name_second, user_name_email, user_name_date_created FROM `users` WHERE user_username = '" . $user_name . "'";					
+					$sql = "SELECT user_id, user_password, user_name_first, user_name_second, user_email, user_image, user_date_created FROM users WHERE user_username = '" . $user_name . "'";					
 					$result = mysqli_query($conn, $sql);					
 					if ($result) {
-							$row = mysqli_fetch_array($result, MYSQLI_ASSOC);							
+							$row = mysqli_fetch_array($result, MYSQLI_ASSOC);	
 							if (password_verify($password, $row['user_password'])) {
+								$_SESSION['user_id'] = $row['user_id'];
 								$_SESSION['user_name'] = $user_name;
 								$_SESSION['user_name_first'] = $row['user_name_first'];
 								$_SESSION['user_name_second'] = $row['user_name_second'];
-								$_SESSION['user_mail'] = $row['user_name_email'];
-								$_SESSION['user_date_created'] = $row['user_name_date_created'];
+								$_SESSION['user_mail'] = $row['user_email'];
+								$_SESSION['user_date_created'] = $row['user_date_created'];
+								$_SESSION['user_image'] = $row['user_image'];
 								header("location: welcome.php");	
 								exit;					
 							} else {
