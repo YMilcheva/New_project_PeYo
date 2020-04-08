@@ -45,7 +45,7 @@
             </div>
             <?php
             	if(isset($_POST['submit'])){
-            		if (isset($_POST['current_password']) && strlen($_POST['current_password']) > 1 && isset($_POST['new_password']) && strlen($_POST['new_password']) && isset($_POST['confirm_password']) && strlen($_POST['confirm_password']) > 1){
+            		if (isset($_POST['current_password']) && strlen($_POST['current_password']) > 1 && isset($_POST['new_password']) && strlen($_POST['new_password']) && isset($_POST['confirm_password']) && strlen($_POST['confirm_password'])){
                         if (strlen($_POST['current_password']) < 8 || strlen($_POST['new_password']) < 8 || strlen($_POST['confirm_password']) < 8){
                             echo '<h3 class="text-center text-secondary">Error: Your Password is too short</h3>';
                         } elseif (strlen($_POST['current_password']) > 15 || strlen($_POST['new_password']) > 15 || strlen($_POST['confirm_password']) > 15){

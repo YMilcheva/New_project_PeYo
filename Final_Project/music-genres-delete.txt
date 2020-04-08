@@ -1,0 +1,800 @@
+INSERT INTO genres (genre_name, genre_approved) VALUES ("2 Tone (Ska)", 1), ("2-Step (Electronic)", 1), ("2-Tone (Reggae)", 1), ("4×4 (Electronic)", 1), ("4-Beat (Dance)", 1), ("8bit (Electronic)", 1), ("A cappella (Vocal)", 1), ("Acid Breaks (Dance)", 1), ("Acid House (Dance)", 1), ("Acid Jazz", 1), ("Acid Jazz (Electronic)", 1), ("Acid Rock", 1), ("Acid Techno (Dance)", 1), ("Acid Trance (Dance)", 1), ("Acousmatic Music (Electronic)", 1), ("Acoustic Blues", 1), ("Adult Alternative (Rock)", 1), ("Adult Contemporary (Pop)", 1), ("Adult-Oriented Rock", 1), ("African Blues", 1), ("African Heavy Metal", 1), ("African Hip Hop", 1), ("Afro Punk (Rock)", 1), ("Afro-Beat", 1), ("Afro-Pop", 1), ("Aggrotech (Industrial)", 1), ("Alternative Country", 1), ("Alternative Dance (Electronic)", 1), ("Alternative Folk", 1), ("Alternative Rap", 1), ("Alternative Rock", 1), ("Alternative Rock (Alternative)", 1), ("Alternativo & Rock Latino", 1), ("Ambient (Electronic)", 1), ("Ambient Dub (Electronic)", 1), ("Ambient House (Electronic)", 1), ("Ambient Techno (Electronic)", 1), ("American Folk Revival", 1), ("American Traditional Rock", 1), ("Americana (Country)", 1), ("Anatolian Rock", 1), ("Anime", 1), ("Anison", 1), ("Anti-Folk", 1), ("Apala", 1), ("Arab Pop", 1), ("Arena Rock", 1), ("Argentine tango", 1), ("Art Punk (Alternative)", 1), ("Art Rock", 1), ("Asian Underground (Electronic)", 1), ("Australian Country", 1), ("Austropop", 1), ("Avant-Garde (Classical)", 1), ("Avant-Garde (Hip-Hop/Rap)", 1), ("Avant-Garde Jazz", 1), ("Axé (Latin)", 1), ("Bachata (Latin)", 1), ("Background (Easy Listening)", 1), ("Baggy (Electronic)", 1), ("Baila", 1), ("Baithak Gana (Latin)", 1), ("Bakersfield Sound (Country)", 1), ("Baladas y Boleros (Latin)", 1), ("Balearic Beat (Electronic)", 1), ("Balkan Pop", 1), ("Ballet (Classical)", 1), ("Baltimore Club (Dance)", 1), ("Barbershop (Vocal)", 1), ("Baroque (Classical)", 1), ("Baroque (Pop)", 1), ("Bassline (Electronic)", 1), ("Bebop (Jazz)", 1), ("Benga", 1), ("Berlin School (Electronic)", 1), ("Bhangra", 1), ("Bhojpuri", 1), ("Big Band (Jazz)", 1), ("Big Beat (Dance)", 1), ("Bikutsi", 1), ("Bitpop (Electronic)", 1), ("Blue Note (Jazz)", 1), ("Bluegrass (Country)", 1), ("Blues Country", 1), ("Blues Rock (Blues)", 1), ("Blues Shouter (Blues)", 1), ("Blues-Rock", 1), ("Bolero (Latin)", 1), ("Bongo Flava", 1), ("Boogie (Pop)", 1), ("Bop (Easy Listening)", 1), ("Bossa Nova (Latin)", 1), ("Bounce (Hip-Hop/Rap)", 1), ("Bouncy House (Dance)", 1), ("Bouncy Techno (Dance)", 1), ("Brazilian (Latin)", 1), ("Brazilian Rock (Latin)", 1), ("Breakbeat / Breakstep (Dance)", 1), ("Breakbeat Hardcore (Dance)", 1), ("Breakcore (Dance)", 1), ("Brega (Latin)", 1), ("Brick City Club (Hip-Hop/Rap)", 1), ("British Blues", 1), ("British Folk Revival", 1), ("British Invasion (Rock)", 1), ("Britpop (Pop)", 1), ("Britpunk (Alternative)", 1), ("Broken Beat (Dance)", 1), ("Brostep (Dance)", 1), ("Bubblegum Dance (Electronic)", 1), ("Bubblegum Pop", 1), ("Bulgarian", 1), ("Cajun", 1), ("Cajun Fiddle Tunes (Country)", 1), ("Calypso", 1), ("Canadian Blues", 1), ("Cantata (Classical)", 1), ("Cantique (Vocal)", 1), ("Cantopop", 1), ("Cape Jazz", 1), ("Caribbean", 1), ("Carnatic", 1), ("CCM (Inspirational – Christian & Gospel)", 1), ("Celtic", 1), ("Celtic Folk", 1), ("Chamber Music (Classical)", 1), ("Chamber Pop", 1), ("Chanson (Pop)", 1), ("Chant (Classical)", 1), ("Chanukah (Holiday)", 1), ("Chap Hop", 1), ("Chicago Blues", 1), ("Chicago Hip Hop", 1), ("Chicago House (Dance)", 1), ("Chicano (Tex-Mex / Tejano)", 1), ("Chicha (Latin)", 1), ("Chill Out (Electronic)", 1), ("Chillstep (Dance)", 1), ("Chillwave (Electronic)", 1), ("Chimurenga", 1), ("Chiptune (Electronic)", 1), ("Choral (Classical)", 1), ("Choro (Latin)", 1), ("Christian & Gospel", 1), ("Christian Country", 1), ("Christian Hip Hop", 1), ("Christian Metal", 1), ("Christian Pop", 1), ("Christian Rap", 1), ("Christian Rock", 1), ("Christmas (Holiday)", 1), ("Christmas: Children’s (Holiday)", 1), ("Christmas: Classic (Holiday)", 1), ("Christmas: Classical (Holiday)", 1), ("Christmas: Comedy (Holiday)", 1), ("Christmas: Jazz (Holiday)", 1), ("Christmas: Modern (Holiday)", 1), ("Christmas: Pop (Holiday)", 1), ("Christmas: R&B (Holiday)", 1), ("Christmas: Religious (Holiday)", 1), ("Christmas: Rock (Holiday)", 1), ("Chutney", 1), ("Chutney Soca", 1), ("Classic (Tex-Mex / Tejano)", 1), ("Classic Blues", 1), ("Classic Christian", 1), ("Classic Country", 1), ("Classic Female Blues", 1), ("Classic Trance (Dance)", 1), ("Classical Crossover (Classical)", 1), ("Classical Crossover (Pop)", 1), ("Close Harmony (Country)", 1), ("Club / Club Dance", 1), ("Cock Rock", 1), ("Coldwave (Industrial)", 1), ("College Rock (Alternative)", 1), ("Commercial (Comedy)", 1), ("Compas", 1), ("Computer Music (Electronic)", 1), ("Concerto (Classical)", 1), ("Concerto Grosso (Classical)", 1), ("Conjunto (Tex-Mex / Tejano)", 1), ("Conjunto Progressive (Tex-Mex / Tejano)", 1), ("Conscious Hip Hop", 1), ("Contemporary Bluegrass (Country)", 1), ("Contemporary Blues", 1), ("Contemporary Celtic", 1), ("Contemporary Classical", 1), ("Contemporary Country", 1), ("Contemporary Folk", 1), ("Contemporary Gospel", 1), ("Contemporary Jazz", 1), ("Contemporary Latin", 1), ("Contemporary R&B", 1), ("Contemporary R&B (Blues)", 1), ("Contemporary Singer/Songwriter", 1), ("Cool (Jazz)", 1), ("Country Blues", 1), ("Country Gospel", 1), ("Country Pop", 1), ("Country Rap", 1), ("Country Rock", 1), ("Country Soul", 1), ("Country-Rap", 1), ("Coupé-décalé", 1), ("Coupé-Décalé", 1), ("Cowboy / Western (Country)", 1), ("Cowpunk (Country)", 1), ("C-Pop", 1), ("Criolla (Latin)", 1), ("Crossover Jazz", 1), ("Crossover Thrash (Alternative)", 1), ("Crunk (Electronic)", 1), ("Crunkcore (Hip-Hop/Rap)", 1), ("Crust Punk (Alternative)", 1), ("Cumbia (Latin)", 1), ("Cumbia Rap", 1), ("Cybergrind (Industrial)", 1), ("Dance Pop", 1), ("Dancehall (Reggae)", 1), ("Dance-pop", 1), ("Dance-Punk (Electronic)", 1), ("Dance-Rock (Electronic)", 1), ("Dangdut", 1), ("Dansband (Country)", 1), ("Dark Ambient (Electronic)", 1), ("Dark Electro (Industrial)", 1), ("Dark Psytrance (Dance)", 1), ("Dark Wave (Electronic)", 1), ("Darkcore (Electronic)", 1), ("Darkside Jungle (Electronic)", 1), ("Darkstep (Electronic)", 1), ("Death Industrial", 1), ("Death Metal / Black Metal", 1), ("Deep House (Dance)", 1), ("Delta Blues", 1), ("Detroit Blues", 1), ("Detroit Hip Hop", 1), ("Detroit Techno (Dance)", 1), ("Digital Hardcore (Dance)", 1), ("Dirty South (Hip-Hop/Rap)", 1), ("Disco (R&B/Soul)", 1), ("Disco House (Pop)", 1), ("Disney", 1), ("Diva House (Dance)", 1), ("Dixieland (Jazz)", 1), ("Doo Wop (R&B/Soul)", 1), ("Doom Metal", 1), ("Doomcore (Dance)", 1), ("Doo-wop (Vocal)", 1), ("Downtempo (Electronic)", 1), ("Dream House (Pop)", 1), ("Dream Pop", 1), ("Dream Trance (Dance)", 1), ("Drinking Songs", 1), ("Drone", 1), ("Drone Music (Electronic)", 1), ("Drum & Bass (Electronic)", 1), ("Drumfunk (Electronic)", 1), ("Drumstep (Electronic)", 1), ("Dub (Reggae)", 1), ("Dub (Ska)", 1), ("Dub Music (Electronic)", 1), ("Dubstep (Dance)", 1), ("Dubstyle (Dance)", 1), ("Dubtronica (Electronic)", 1), ("Dutch House (Dance)", 1), ("Early Music (Classical)", 1), ("East Coast (Hip-Hop/Rap)", 1), ("Easter (Holiday)", 1), ("Electric Blues", 1), ("Electro (Electronic)", 1), ("Electro Backbeat (Electronic)", 1), ("Electro House (Dance)", 1), ("Electro Pop", 1), ("Electroacoustic (Electronic)", 1), ("Electroacoustic Improvisation (Electronic)", 1), ("Electroclash (Electronic)", 1), ("Electro-Grime (Electronic)", 1), ("Electro-Industrial", 1), ("Electronic Art Music", 1), ("Electronic Body Music (Industrial)", 1), ("Electronic Dance Music", 1), ("Electronic Rock", 1), ("Electronica", 1), ("Electronicore (Electronic)", 1), ("Electropop (Electronic)", 1), ("Electropunk (Electronic)", 1), ("Electroswing (Dance)", 1), ("Electro-swing (Electronic)", 1), ("Elevator (Easy Listening)", 1), ("Emotional Hardcore (Alternative)", 1), ("Enka", 1), ("Environmental (New Age)", 1), ("Ethereal Wave (Electronic)", 1), ("Ethio-jazz", 1), ("Ethnic Electronica (Electronic)", 1), ("Eurobeat (Electronic)", 1), ("Eurodance (Electronic)", 1), ("Europop", 1), ("Exercise (Dance)", 1), ("Experimental Rock (Alternative)", 1), ("Expressionist (Classical)", 1), ("Fann At-Tanbura", 1), ("Field Recording (Electronic)", 1), ("Fijiri", 1), ("Filk Music (Folk)", 1), ("Filmi", 1), ("Fitness & Workout", 1), ("Flamenco / Spanish Flamenco (Latin)", 1), ("Florida Breaks (Dance)", 1), ("Folk Blues", 1), ("Folk Punk (Alternative)", 1), ("Folk-Rock", 1), ("Folktronica (Electronic)", 1), ("Foreign Cinema (Soundtrack)", 1), ("Forró (Latin)", 1), ("France", 1), ("Franco-Country", 1), ("Freak Folk", 1), ("Free Tekno (Dance)", 1), ("Freestyle House (Dance)", 1), ("Freestyle Music (Electronic)", 1), ("Freestyle Rap", 1), ("French House (Dance)", 1), ("French Pop", 1), ("Frevo (Latin)", 1), ("Fuji Music", 1), ("Full on (Dance)", 1), ("Funk (R&B/Soul)", 1), ("Funk Carioca (Latin)", 1), ("Funky House (Dance)", 1), ("Furniture (Easy Listening)", 1), ("Fusion (Jazz)", 1), ("Future Garage (Dance)", 1), ("Futurepop (Industrial)", 1), ("Gabber (Dance)", 1), ("Game Boy (Electronic)", 1), ("Gangsta Rap", 1), ("Garage (Dance)", 1), ("Genge", 1), ("German Folk", 1), ("German Pop", 1), ("G-Funk (Hip-Hop/Rap)", 1), ("Ghetto House (Dance)", 1), ("Ghettotech (Dance)", 1), ("Glam Rock", 1), ("Glitch (Electronic)", 1), ("Glitch Hop (Dance)", 1), ("Glitch Pop (Dance)", 1), ("Goa Trance (Dance)", 1), ("Golden Age (Hip-Hop/Rap)", 1), ("Gospel", 1), ("Gospel Blues", 1), ("Goth / Gothic Rock (Alternative)", 1), ("Gothic Metal", 1), ("Gregorian Chant (Vocal)", 1), ("Grime (Dance)", 1), ("Grime (Electronic)", 1), ("Grind Core (Rock)", 1), ("Grunge (Alternative)", 1), ("Gulf and Western (Country)", 1), ("Gypsy Jazz", 1), ("Hair Metal", 1), ("Halloween (Holiday)", 1), ("Happy Hardcore (Dance)", 1), ("Hard Bop (Jazz)", 1), ("Hard Dance", 1), ("Hard Nrg (Electronic)", 1), ("Hard Rock", 1), ("Hard Rock (Alternative)", 1), ("Hard Trance (Dance)", 1), ("Hardbag (Dance)", 1), ("Hardcore (Dance)", 1), ("Hardcore Hip Hop", 1), ("Hardcore Punk (Alternative)", 1), ("Hardcore Rap", 1), ("Hardstep (Electronic)", 1), ("Hardstyle (Dance)", 1), ("Hardstyle (Electronic)", 1), ("Harmonica Blues", 1), ("Hawaii", 1), ("Healing (New Age)", 1), ("Hellbilly Music (Country)", 1), ("High Classical", 1), ("Highlife", 1), ("Hill Country Blues", 1), ("Hindustani", 1), ("Hi-Nrg (Electronic)", 1), ("Hi-NRG / Eurodance", 1), ("Hip House (Dance)", 1), ("Hip Pop (Hip-Hop/Rap)", 1), ("Hip-Hop", 1), ("Hiplife", 1), ("Hokum Blues", 1), ("Hong Kong English Pop", 1), ("Honky Tonk (Country)", 1), ("Horrorcore (Dance)", 1), ("Horrorcore (Hip-Hop/Rap)", 1), ("House (Dance)", 1), ("Huayno (Latin)", 1), ("Hyphy (Hip-Hop/Rap)", 1), ("Idm (Electronic)", 1), ("IDM/Experimental (Electronic)", 1), ("Illbient (Electronic)", 1), ("Impressionist (Classical)", 1), ("Indian Ghazal", 1), ("Indian Pop", 1), ("Indie Folk", 1), ("Indie Pop", 1), ("Indie Rock (Alternative)", 1), ("Indietronica (Electronic)", 1), ("Industrial (Electronic)", 1), ("Industrial Folk", 1), ("Industrial Hip Hop", 1), ("Industrial Metal", 1), ("Industrial Rock", 1), ("Instrumental Country", 1), ("Instrumental Hip Hop", 1), ("Intelligent Drum and Bass (Electronic)", 1), ("Iranian Pop", 1), ("Isicathamiya", 1), ("Isolationism (Electronic)", 1), ("Italo Dance (Electronic)", 1), ("Italo House (Dance)", 1), ("Jackin House (Dance)", 1), ("Jam Bands (Rock)", 1), ("Jangle Pop", 1), ("Japan", 1), ("Japanese Pop", 1), ("Japanoise (Industrial)", 1), ("Jazz Blues", 1), ("Jazz Rap", 1), ("Jingles (Comedy)", 1), ("Jit", 1), ("J-Pop", 1), ("J-Punk", 1), ("J-Rock", 1), ("J-Ska", 1), ("J-Synth", 1), ("Jùjú", 1), ("Jump Blues", 1), ("Jumpstyle (Dance)", 1), ("Jump-Up (Electronic)", 1), ("Jungle / Drum’n’bass (Dance)", 1), ("Kansas City Blues", 1), ("Kapuka", 1), ("Karaoke", 1), ("Kayokyoku", 1), ("Kayōkyoku", 1), ("Khaliji", 1), ("Kizomba", 1), ("Klezmer", 1), ("Korean Pop", 1), ("K-Pop", 1), ("Kuduro", 1), ("Kwaito", 1), ("Kwela", 1), ("Laïkó (Pop)", 1), ("Lambada (Latin)", 1), ("Laptronica (Electronic)", 1), ("Latin Ballad (Pop)", 1), ("Latin House (Dance)", 1), ("Latin Jazz", 1), ("Latin Pop", 1), ("Latin Rap", 1), ("Lavani", 1), ("Levenslied (Pop)", 1), ("Liquid Dub (Dance)", 1), ("Liquid Funk (Electronic)", 1), ("Live Coding (Electronic)", 1), ("Live Electronics (Electronic)", 1), ("Liwa", 1), ("Lo-fi (Alternative)", 1), ("Louisiana Blues", 1), ("Louisiana Swamp Pop", 1), ("Lounge (Easy Listening)", 1), ("Love Song (Singer/Songwriter)", 1), ("Lovers Rock (Reggae)", 1), ("Low Bap (Hip-Hop/Rap)", 1), ("Lowercase (Electronic)", 1), ("Lubbock Sound (Country)", 1), ("Luk Krung", 1), ("Luk Thung", 1), ("Lullabies (Children’s Music)", 1), ("Lyrical Hip Hop", 1), ("Madchester (Electronic)", 1), ("Mafioso Rap", 1), ("Mainstream Jazz", 1), ("Makina (Dance)", 1), ("Makossa", 1), ("Maloya", 1), ("Mambo", 1), ("Mandopop", 1), ("Manila Sound", 1), ("Maracatu (Latin)", 1), ("March (Marching Band)", 1), ("Mariachi (Latin)", 1), ("Marrabenta", 1), ("Mass Requiem (Classical)", 1), ("Math Metal", 1), ("Math Rock", 1), ("Mbalax", 1), ("Mbaqanga", 1), ("Mbube", 1), ("Medieval (Classical)", 1), ("Meditation (New Age)", 1), ("Memphis Blues", 1), ("Merengue", 1), ("Merenrap (Hip-Hop/Rap)", 1), ("Méringue", 1), ("Metal", 1), ("Metal Core", 1), ("Mexican Pop", 1), ("Middle of the Road (Easy Listening)", 1), ("Midwest Hip Hop", 1), ("Minimal (Dance)", 1), ("Minimal House (Dance)", 1), ("Minimalism (Classical)", 1), ("Modern Blues", 1), ("Modern Classical", 1), ("Modern Composition (Classical)", 1), ("Modern Soul", 1), ("Moombahton (Electronic)", 1), ("Morlam", 1), ("Morna", 1), ("Motorpop", 1), ("Motown (R&B/Soul)", 1), ("Motswako (Hip-Hop/Rap)", 1), ("Movie Soundtrack", 1), ("Museve", 1), ("Música Popular Brasileira (Latin)", 1), ("Música Sertaneja (Latin)", 1), ("Musicals (Soundtrack)", 1), ("Musique Concrète (Alternative)", 1), ("Nashville Sound (Country)", 1), ("Nature (New Age)", 1), ("Nederpop", 1), ("Neofolk", 1), ("Neo-Soul", 1), ("Neotraditional Country", 1), ("Nerdcore (Hip-Hop/Rap)", 1), ("Neue Deutsche Härte (Industrial)", 1), ("Neurofunk (Electronic)", 1), ("New Acoustic (Singer/Songwriter)", 1), ("New Beat (Electronic)", 1), ("New Jack Swing (Hip-Hop/Rap)", 1), ("New Jersey Hip Hop", 1), ("New Mex (Tex-Mex / Tejano)", 1), ("New Orlean Blues", 1), ("New Rave (Electronic)", 1), ("New Romanticism (Pop)", 1), ("New School Hip Hop", 1), ("New Wave (Alternative)", 1), ("Nintendocore (Electronic)", 1), ("Noise (Industrial)", 1), ("Noise Rock", 1), ("Nortec (Dance)", 1), ("Northern Soul", 1), ("Novelty (Comedy)", 1), ("Nu Jazz (Electronic)", 1), ("Nu Skool Breaks (Dance)", 1), ("Nuevo Flamenco (Latin)", 1), ("NY Blues", 1), ("Ode", 1), ("Old School Rap", 1), ("Oldschool Jungle (Electronic)", 1), ("Onkyokei", 1), ("Opera", 1), ("Opera (Classical)", 1), ("Oratorio (Classical)", 1), ("Orchestral (Classical)", 1), ("Orchestral Pop", 1), ("Orchestral Uplifting (Dance)", 1), ("Organum (Classical)", 1), ("Original Score (Soundtrack)", 1), ("Other (Holiday)", 1), ("Outlaw Country", 1), ("Pagode (Latin)", 1), ("Palm-Wine", 1), ("Parody Music (Comedy)", 1), ("Piano Blues", 1), ("Piedmont Blues", 1), ("Pinoy Pop", 1), ("Piphat", 1), ("Polka", 1), ("Pop Latino (Latin)", 1), ("Pop Punk", 1), ("Pop Rap", 1), ("Pop Sunda", 1), ("Pop/Rock", 1), ("Popera", 1), ("Portuguese fado (Latin)", 1), ("Post Punk (Rock)", 1), ("Post-Disco (Pop)", 1), ("Power Electronics (Industrial)", 1), ("Power Noise (Industrial)", 1), ("Power Pop", 1), ("Praise & Worship (Inspirational – Christian & Gospel)", 1), ("Progressive (Country)", 1), ("Progressive (Pop)", 1), ("Progressive Bluegrass (Country)", 1), ("Progressive Breaks (Pop)", 1), ("Progressive Drum & Bass (Pop)", 1), ("Progressive Folk", 1), ("Progressive House (Dance)", 1), ("Progressive House / Trance (Pop)", 1), ("Progressive Metal", 1), ("Progressive Rock (Alternative)", 1), ("Progressive Techno (Pop)", 1), ("Prog-Rock/Art Rock", 1), ("Psybreaks (Dance)", 1), ("Psychedelic (Rock)", 1), ("Psychedelic Folk", 1), ("Psychedelic Pop", 1), ("Psychedelic Soul", 1), ("Psychobilly / Punkabilly (Country)", 1), ("Psyprog (Dance)", 1), ("Punk (Alternative)", 1), ("Punk Blues", 1), ("Punta (Latin)", 1), ("Punta Rock (Latin)", 1), ("Qawwali (Inspirational – Christian & Gospel)", 1), ("Quiet Storm (R&B/Soul)", 1), ("Ragga (Reggae)", 1), ("Ragga Jungle (Electronic)", 1), ("Raggacore (Electronic)", 1), ("Raggamuffin (Reggae)", 1), ("Ragini", 1), ("Ragtime (Jazz)", 1), ("Ragtime Blues", 1), ("Raï", 1), ("Raíces (Latin)", 1), ("Raison (Latin)", 1), ("Ranchera (Latin)", 1), ("Rap", 1), ("Rave Music (Dance)", 1), ("Reactionary Bluegrass (Country)", 1), ("Red Dirt (Country)", 1), ("Reggae 110", 1), ("Reggae Bultrón", 1), ("Reggae en Español", 1), ("Reggae Fusion", 1), ("Reggaeton y Hip-Hop (Latin)", 1), ("Regional Mexicano (Latin)", 1), ("Regstep (Dance)", 1), ("Relaxation (New Age)", 1), ("Renaissance (Classical)", 1), ("Rhythm Blues", 1), ("Rock & Roll", 1), ("Rockabilly", 1), ("Rocksteady (Ska)", 1), ("Romantic (early period) (Classical)", 1), ("Romantic (later period) (Classical)", 1), ("Romantic Flow (Reggae)", 1), ("Roots Reggae", 1), ("Roots Rock", 1), ("Russian Pop", 1), ("Sakara", 1), ("Salsa y Tropical (Latin)", 1), ("Samba (Latin)", 1), ("Samba Rock (Latin)", 1), ("Sambass (Electronic)", 1), ("Sawt", 1), ("Schlager (Pop)", 1), ("Schranz (Dance)", 1), ("Sega", 1), ("Seggae", 1), ("Semba", 1), ("Sertanejo (Country)", 1), ("Shoegaze (Alternative)", 1), ("Sing-Along (Children’s Music)", 1), ("Singer/Songwriter (Rock)", 1), ("Skweee (Electronic)", 1), ("Smooth Jazz", 1), ("Soca", 1), ("Soca (Latin)", 1), ("Soft Rock (Pop)", 1), ("Son (Latin)", 1), ("Sonata (Classical)", 1), ("Sophisti-Pop", 1), ("Soukous", 1), ("Soul", 1), ("Soul Blues", 1), ("Sound Art (Electronic)", 1), ("Soundscape Composition (Electronic)", 1), ("Soundtrack", 1), ("Southern Gospel", 1), ("Southern Rock", 1), ("Southern Soul", 1), ("Space Age Pop", 1), ("Space House (Pop)", 1), ("Space Rock (Electronic)", 1), ("Spanish Reggae", 1), ("Spazzcore (Rock)", 1), ("Speed Garage (Electronic)", 1), ("Speedcore (Dance)", 1), ("Spoken Word", 1), ("St. Louis Blues", 1), ("St. Louis Hip Hop", 1), ("Standards (Vocal)", 1), ("Stand-up Comedy", 1), ("Steampunk (Alternative)", 1), ("Stoner Metal (Rock)", 1), ("Stories (Children’s Music)", 1), ("String Quartet (Classical)", 1), ("Sung Poetry  (Folk)", 1), ("Sunshine Pop", 1), ("Suomisaundi (Dance)", 1), ("Surf (Rock)", 1), ("Surf Pop", 1), ("Swamp Blues", 1), ("Swing (Easy Listening)", 1), ("Swing House (Dance)", 1), ("Symphonic (Classical)", 1), ("Symphony (Classical)", 1), ("Synthcore (Electronic)", 1), ("Synthpop", 1), ("Synthpop (Electronic)", 1), ("Synthpunk (Electronic)", 1), ("Taarab", 1), ("Taiwanese Pop", 1), ("Tape Music (Electronic)", 1), ("Tech HouseTribal House (Dance)", 1), ("Tech Trance (Dance)", 1), ("Technical Death Metal", 1), ("Techno (Dance)", 1), ("Techno-Dnb (Dance)", 1), ("Techno-Folk", 1), ("Technopop (Dance)", 1), ("Techstep (Electronic)", 1), ("Tecno Brega (Dance)", 1), ("Tecnobrega (Latin)", 1), ("Teen Pop", 1), ("Tejano (Latin)", 1), ("Terrorcore (Dance)", 1), ("Texas Blues", 1), ("Texas County", 1), ("Tex-Mex", 1), ("Tex-Mex (Rock)", 1), ("Thai Pop", 1), ("Thanksgiving (Holiday)", 1), ("Thrash Metal", 1), ("Timba (Latin)", 1), ("Time Lord Rock (Rock)", 1), ("Toytown Techno (Dance)", 1), ("Trad Jazz", 1), ("Traditional Bluegrass (Country)", 1), ("Traditional Celtic", 1), ("Traditional Country", 1), ("Traditional Folk", 1), ("Traditional Gospel", 1), ("Traditional Pop (Vocal)", 1), ("Traditional Pop Music", 1), ("Trance (Dance)", 1), ("Trap (Dance)", 1), ("Travel (New Age)", 1), ("Trip Hop (Electronic)", 1), ("Trip-hop (Rock)", 1), ("Tropicalia (Latin)", 1), ("Truck-Driving Country", 1), ("Turbofolk (Electronic)", 1), ("Turkish Pop", 1), ("Turntablism (Hip-Hop/Rap)", 1), ("TV Soundtrack", 1), ("TV Themes (Comedy)", 1), ("Twin Cities Hip Hop", 1), ("Twoubadou (Latin)", 1), ("UK Garage (Electronic)", 1), ("UK Hard House (Dance)", 1), ("Uk Hardcore (Dance)", 1), ("Underground Rap", 1), ("Uplifting Trance (Dance)", 1), ("Urban Blues", 1), ("Urban Cowboy (Country)", 1), ("US Garage (Dance)", 1), ("Vandeville (Blues)", 1), ("Vaudeville (Comedy)", 1), ("Video Game Music (Electronic)", 1), ("Vispop", 1), ("Vocal House (Dance)", 1), ("Vocal Jazz", 1), ("Vocal Pop", 1), ("Vocal Trance (Dance)", 1), ("Wedding Music (Classical)", 1), ("West Coast Blues", 1), ("West Coast Rap", 1), ("Western Swing (Country)", 1), ("Witch House (Industrial)", 1), ("Wonky Pop", 1), ("Worldbeat", 1), ("Yorkshire Bleeps and Bass (Electronic)", 1), ("Zouglou", 1), ("Zouk (Latin)", 1), ("Zouk-Lambada (Latin)", 1), ("Zydeco", 1), ("Zydeco (Blues)", 1), ("Zydeco (Country)", 1)
+
+2 Tone (Ska)
+2-Step (Electronic)
+2-Tone (Reggae)
+4×4 (Electronic)
+4-Beat (Dance)
+8bit (Electronic)
+A cappella (Vocal)
+Acid Breaks (Dance)
+Acid House (Dance)
+Acid Jazz
+Acid Jazz (Electronic)
+Acid Rock
+Acid Techno (Dance)
+Acid Trance (Dance)
+Acousmatic Music (Electronic)
+Acoustic Blues
+Adult Alternative (Rock)
+Adult Contemporary (Pop)
+Adult-Oriented Rock
+African Blues
+African Heavy Metal
+African Hip Hop
+Afro Punk (Rock)
+Afro-Beat
+Afro-Pop
+Aggrotech (Industrial)
+Alternative Country
+Alternative Dance (Electronic)
+Alternative Folk
+Alternative Rap
+Alternative Rock
+Alternative Rock (Alternative)
+Alternativo & Rock Latino
+Ambient (Electronic)
+Ambient Dub (Electronic)
+Ambient House (Electronic)
+Ambient Techno (Electronic)
+American Folk Revival
+American Traditional Rock
+Americana (Country)
+Anatolian Rock
+Anime
+Anison
+Anti-Folk
+Apala
+Arab Pop
+Arena Rock
+Argentine tango
+Art Punk (Alternative)
+Art Rock
+Asian Underground (Electronic)
+Australian Country
+Austropop
+Avant-Garde (Classical)
+Avant-Garde (Hip-Hop/Rap)
+Avant-Garde Jazz
+Axé (Latin)
+Bachata (Latin)
+Background (Easy Listening)
+Baggy (Electronic)
+Baila
+Baithak Gana (Latin)
+Bakersfield Sound (Country)
+Baladas y Boleros (Latin)
+Balearic Beat (Electronic)
+Balkan Pop
+Ballet (Classical)
+Baltimore Club (Dance)
+Barbershop (Vocal)
+Baroque (Classical)
+Baroque (Pop)
+Bassline (Electronic)
+Bebop (Jazz)
+Benga
+Berlin School (Electronic)
+Bhangra
+Bhojpuri
+Big Band (Jazz)
+Big Beat (Dance)
+Bikutsi
+Bitpop (Electronic)
+Blue Note (Jazz)
+Bluegrass (Country)
+Blues Country
+Blues Rock (Blues)
+Blues Shouter (Blues)
+Blues-Rock
+Bolero (Latin)
+Bongo Flava
+Boogie (Pop)
+Bop (Easy Listening)
+Bossa Nova (Latin)
+Bounce (Hip-Hop/Rap)
+Bouncy House (Dance)
+Bouncy Techno (Dance)
+Brazilian (Latin)
+Brazilian Rock (Latin)
+Breakbeat / Breakstep (Dance)
+Breakbeat Hardcore (Dance)
+Breakcore (Dance)
+Brega (Latin)
+Brick City Club (Hip-Hop/Rap)
+British Blues
+British Folk Revival
+British Invasion (Rock)
+Britpop (Pop)
+Britpunk (Alternative)
+Broken Beat (Dance)
+Brostep (Dance)
+Bubblegum Dance (Electronic)
+Bubblegum Pop
+Bulgarian
+Cajun
+Cajun Fiddle Tunes (Country)
+Calypso
+Canadian Blues
+Cantata (Classical)
+Cantique (Vocal)
+Cantopop
+Cape Jazz
+Caribbean
+Carnatic
+CCM (Inspirational – Christian & Gospel)
+Celtic
+Celtic Folk
+Chamber Music (Classical)
+Chamber Pop
+Chanson (Pop)
+Chant (Classical)
+Chanukah (Holiday)
+Chap Hop
+Chicago Blues
+Chicago Hip Hop
+Chicago House (Dance)
+Chicano (Tex-Mex / Tejano)
+Chicha (Latin)
+Chill Out (Electronic)
+Chillstep (Dance)
+Chillwave (Electronic)
+Chimurenga
+Chiptune (Electronic)
+Choral (Classical)
+Choro (Latin)
+Christian & Gospel
+Christian Country
+Christian Hip Hop
+Christian Metal
+Christian Pop
+Christian Rap
+Christian Rock
+Christmas (Holiday)
+Christmas: Children’s (Holiday)
+Christmas: Classic (Holiday)
+Christmas: Classical (Holiday)
+Christmas: Comedy (Holiday)
+Christmas: Jazz (Holiday)
+Christmas: Modern (Holiday)
+Christmas: Pop (Holiday)
+Christmas: R&B (Holiday)
+Christmas: Religious (Holiday)
+Christmas: Rock (Holiday)
+Chutney
+Chutney Soca
+Classic (Tex-Mex / Tejano)
+Classic Blues
+Classic Christian
+Classic Country
+Classic Female Blues
+Classic Trance (Dance)
+Classical Crossover (Classical)
+Classical Crossover (Pop)
+Close Harmony (Country)
+Club / Club Dance
+Cock Rock
+Coldwave (Industrial)
+College Rock (Alternative)
+Commercial (Comedy)
+Compas
+Computer Music (Electronic)
+Concerto (Classical)
+Concerto Grosso (Classical)
+Conjunto (Tex-Mex / Tejano)
+Conjunto Progressive (Tex-Mex / Tejano)
+Conscious Hip Hop
+Contemporary Bluegrass (Country)
+Contemporary Blues
+Contemporary Celtic
+Contemporary Classical
+Contemporary Country
+Contemporary Folk
+Contemporary Gospel
+Contemporary Jazz
+Contemporary Latin
+Contemporary R&B
+Contemporary R&B (Blues)
+Contemporary Singer/Songwriter
+Cool (Jazz)
+Country Blues
+Country Gospel
+Country Pop
+Country Rap
+Country Rock
+Country Soul
+Country-Rap
+Coupé-décalé
+Coupé-Décalé
+Cowboy / Western (Country)
+Cowpunk (Country)
+C-Pop
+Criolla (Latin)
+Crossover Jazz
+Crossover Thrash (Alternative)
+Crunk (Electronic)
+Crunkcore (Hip-Hop/Rap)
+Crust Punk (Alternative)
+Cumbia (Latin)
+Cumbia Rap
+Cybergrind (Industrial)
+Dance Pop
+Dancehall (Reggae)
+Dance-pop
+Dance-Punk (Electronic)
+Dance-Rock (Electronic)
+Dangdut
+Dansband (Country)
+Dark Ambient (Electronic)
+Dark Electro (Industrial)
+Dark Psytrance (Dance)
+Dark Wave (Electronic)
+Darkcore (Electronic)
+Darkside Jungle (Electronic)
+Darkstep (Electronic)
+Death Industrial
+Death Metal / Black Metal
+Deep House (Dance)
+Delta Blues
+Detroit Blues
+Detroit Hip Hop
+Detroit Techno (Dance)
+Digital Hardcore (Dance)
+Dirty South (Hip-Hop/Rap)
+Disco (R&B/Soul)
+Disco House (Pop)
+Disney
+Diva House (Dance)
+Dixieland (Jazz)
+Doo Wop (R&B/Soul)
+Doom Metal
+Doomcore (Dance)
+Doo-wop (Vocal)
+Downtempo (Electronic)
+Dream House (Pop)
+Dream Pop
+Dream Trance (Dance)
+Drinking Songs
+Drone
+Drone Music (Electronic)
+Drum & Bass (Electronic)
+Drumfunk (Electronic)
+Drumstep (Electronic)
+Dub (Reggae)
+Dub (Ska)
+Dub Music (Electronic)
+Dubstep (Dance)
+Dubstyle (Dance)
+Dubtronica (Electronic)
+Dutch House (Dance)
+Early Music (Classical)
+East Coast (Hip-Hop/Rap)
+Easter (Holiday)
+Electric Blues
+Electro (Electronic)
+Electro Backbeat (Electronic)
+Electro House (Dance)
+Electro Pop
+Electroacoustic (Electronic)
+Electroacoustic Improvisation (Electronic)
+Electroclash (Electronic)
+Electro-Grime (Electronic)
+Electro-Industrial
+Electronic Art Music
+Electronic Body Music (Industrial)
+Electronic Dance Music
+Electronic Rock
+Electronica
+Electronicore (Electronic)
+Electropop (Electronic)
+Electropunk (Electronic)
+Electroswing (Dance)
+Electro-swing (Electronic)
+Elevator (Easy Listening)
+Emotional Hardcore (Alternative)
+Enka
+Environmental (New Age)
+Ethereal Wave (Electronic)
+Ethio-jazz
+Ethnic Electronica (Electronic)
+Eurobeat (Electronic)
+Eurodance (Electronic)
+Europop
+Exercise (Dance)
+Experimental Rock (Alternative)
+Expressionist (Classical)
+Fann At-Tanbura
+Field Recording (Electronic)
+Fijiri
+Filk Music (Folk)
+Filmi
+Fitness & Workout
+Flamenco / Spanish Flamenco (Latin)
+Florida Breaks (Dance)
+Folk Blues
+Folk Punk (Alternative)
+Folk-Rock
+Folktronica (Electronic)
+Foreign Cinema (Soundtrack)
+Forró (Latin)
+France
+Franco-Country
+Freak Folk
+Free Tekno (Dance)
+Freestyle House (Dance)
+Freestyle Music (Electronic)
+Freestyle Rap
+French House (Dance)
+French Pop
+Frevo (Latin)
+Fuji Music
+Full on (Dance)
+Funk (R&B/Soul)
+Funk Carioca (Latin)
+Funky House (Dance)
+Furniture (Easy Listening)
+Fusion (Jazz)
+Future Garage (Dance)
+Futurepop (Industrial)
+Gabber (Dance)
+Game Boy (Electronic)
+Gangsta Rap
+Garage (Dance)
+Genge
+German Folk
+German Pop
+G-Funk (Hip-Hop/Rap)
+Ghetto House (Dance)
+Ghettotech (Dance)
+Glam Rock
+Glitch (Electronic)
+Glitch Hop (Dance)
+Glitch Pop (Dance)
+Goa Trance (Dance)
+Golden Age (Hip-Hop/Rap)
+Gospel
+Gospel Blues
+Goth / Gothic Rock (Alternative)
+Gothic Metal
+Gregorian Chant (Vocal)
+Grime (Dance)
+Grime (Electronic)
+Grind Core (Rock)
+Grunge (Alternative)
+Gulf and Western (Country)
+Gypsy Jazz
+Hair Metal
+Halloween (Holiday)
+Happy Hardcore (Dance)
+Hard Bop (Jazz)
+Hard Dance
+Hard Nrg (Electronic)
+Hard Rock
+Hard Rock (Alternative)
+Hard Trance (Dance)
+Hardbag (Dance)
+Hardcore (Dance)
+Hardcore Hip Hop
+Hardcore Punk (Alternative)
+Hardcore Rap
+Hardstep (Electronic)
+Hardstyle (Dance)
+Hardstyle (Electronic)
+Harmonica Blues
+Hawaii
+Healing (New Age)
+Hellbilly Music (Country)
+High Classical
+Highlife
+Hill Country Blues
+Hindustani
+Hi-Nrg (Electronic)
+Hi-NRG / Eurodance
+Hip House (Dance)
+Hip Pop (Hip-Hop/Rap)
+Hip-Hop
+Hiplife
+Hokum Blues
+Hong Kong English Pop
+Honky Tonk (Country)
+Horrorcore (Dance)
+Horrorcore (Hip-Hop/Rap)
+House (Dance)
+Huayno (Latin)
+Hyphy (Hip-Hop/Rap)
+Idm (Electronic)
+IDM/Experimental (Electronic)
+Illbient (Electronic)
+Impressionist (Classical)
+Indian Ghazal
+Indian Pop
+Indie Folk
+Indie Pop
+Indie Rock (Alternative)
+Indietronica (Electronic)
+Industrial (Electronic)
+Industrial Folk
+Industrial Hip Hop
+Industrial Metal
+Industrial Rock
+Instrumental Country
+Instrumental Hip Hop
+Intelligent Drum and Bass (Electronic)
+Iranian Pop
+Isicathamiya
+Isolationism (Electronic)
+Italo Dance (Electronic)
+Italo House (Dance)
+Jackin House (Dance)
+Jam Bands (Rock)
+Jangle Pop
+Japan
+Japanese Pop
+Japanoise (Industrial)
+Jazz Blues
+Jazz Rap
+Jingles (Comedy)
+Jit
+J-Pop
+J-Punk
+J-Rock
+J-Ska
+J-Synth
+Jùjú
+Jump Blues
+Jumpstyle (Dance)
+Jump-Up (Electronic)
+Jungle / Drum’n’bass (Dance)
+Kansas City Blues
+Kapuka
+Karaoke
+Kayokyoku
+Kayōkyoku
+Khaliji
+Kizomba
+Klezmer
+Korean Pop
+K-Pop
+Kuduro
+Kwaito
+Kwela
+Laïkó (Pop)
+Lambada (Latin)
+Laptronica (Electronic)
+Latin Ballad (Pop)
+Latin House (Dance)
+Latin Jazz
+Latin Pop
+Latin Rap
+Lavani
+Levenslied (Pop)
+Liquid Dub (Dance)
+Liquid Funk (Electronic)
+Live Coding (Electronic)
+Live Electronics (Electronic)
+Liwa
+Lo-fi (Alternative)
+Louisiana Blues
+Louisiana Swamp Pop
+Lounge (Easy Listening)
+Love Song (Singer/Songwriter)
+Lovers Rock (Reggae)
+Low Bap (Hip-Hop/Rap)
+Lowercase (Electronic)
+Lubbock Sound (Country)
+Luk Krung
+Luk Thung
+Lullabies (Children’s Music)
+Lyrical Hip Hop
+Madchester (Electronic)
+Mafioso Rap
+Mainstream Jazz
+Makina (Dance)
+Makossa
+Maloya
+Mambo
+Mandopop
+Manila Sound
+Maracatu (Latin)
+March (Marching Band)
+Mariachi (Latin)
+Marrabenta
+Mass Requiem (Classical)
+Math Metal
+Math Rock
+Mbalax
+Mbaqanga
+Mbube
+Medieval (Classical)
+Meditation (New Age)
+Memphis Blues
+Merengue
+Merenrap (Hip-Hop/Rap)
+Méringue
+Metal
+Metal Core
+Mexican Pop
+Middle of the Road (Easy Listening)
+Midwest Hip Hop
+Minimal (Dance)
+Minimal House (Dance)
+Minimalism (Classical)
+Modern Blues
+Modern Classical
+Modern Composition (Classical)
+Modern Soul
+Moombahton (Electronic)
+Morlam
+Morna
+Motorpop
+Motown (R&B/Soul)
+Motswako (Hip-Hop/Rap)
+Movie Soundtrack
+Museve
+Música Popular Brasileira (Latin)
+Música Sertaneja (Latin)
+Musicals (Soundtrack)
+Musique Concrète (Alternative)
+Nashville Sound (Country)
+Nature (New Age)
+Nederpop
+Neofolk
+Neo-Soul
+Neotraditional Country
+Nerdcore (Hip-Hop/Rap)
+Neue Deutsche Härte (Industrial)
+Neurofunk (Electronic)
+New Acoustic (Singer/Songwriter)
+New Beat (Electronic)
+New Jack Swing (Hip-Hop/Rap)
+New Jersey Hip Hop
+New Mex (Tex-Mex / Tejano)
+New Orlean Blues
+New Rave (Electronic)
+New Romanticism (Pop)
+New School Hip Hop
+New Wave (Alternative)
+Nintendocore (Electronic)
+Noise (Industrial)
+Noise Rock
+Nortec (Dance)
+Northern Soul
+Novelty (Comedy)
+Nu Jazz (Electronic)
+Nu Skool Breaks (Dance)
+Nuevo Flamenco (Latin)
+NY Blues
+Ode
+Old School Rap
+Oldschool Jungle (Electronic)
+Onkyokei
+Opera
+Opera (Classical)
+Oratorio (Classical)
+Orchestral (Classical)
+Orchestral Pop
+Orchestral Uplifting (Dance)
+Organum (Classical)
+Original Score (Soundtrack)
+Other (Holiday)
+Outlaw Country
+Pagode (Latin)
+Palm-Wine
+Parody Music (Comedy)
+Piano Blues
+Piedmont Blues
+Pinoy Pop
+Piphat
+Polka
+Pop Latino (Latin)
+Pop Punk
+Pop Rap
+Pop Sunda
+Pop/Rock
+Popera
+Portuguese fado (Latin)
+Post Punk (Rock)
+Post-Disco (Pop)
+Power Electronics (Industrial)
+Power Noise (Industrial)
+Power Pop
+Praise & Worship (Inspirational – Christian & Gospel)
+Progressive (Country)
+Progressive (Pop)
+Progressive Bluegrass (Country)
+Progressive Breaks (Pop)
+Progressive Drum & Bass (Pop)
+Progressive Folk
+Progressive House (Dance)
+Progressive House / Trance (Pop)
+Progressive Metal
+Progressive Rock (Alternative)
+Progressive Techno (Pop)
+Prog-Rock/Art Rock
+Psybreaks (Dance)
+Psychedelic (Rock)
+Psychedelic Folk
+Psychedelic Pop
+Psychedelic Soul
+Psychobilly / Punkabilly (Country)
+Psyprog (Dance)
+Punk (Alternative)
+Punk Blues
+Punta (Latin)
+Punta Rock (Latin)
+Qawwali (Inspirational – Christian & Gospel)
+Quiet Storm (R&B/Soul)
+Ragga (Reggae)
+Ragga Jungle (Electronic)
+Raggacore (Electronic)
+Raggamuffin (Reggae)
+Ragini
+Ragtime (Jazz)
+Ragtime Blues
+Raï
+Raíces (Latin)
+Raison (Latin)
+Ranchera (Latin)
+Rap
+Rave Music (Dance)
+Reactionary Bluegrass (Country)
+Red Dirt (Country)
+Reggae 110
+Reggae Bultrón
+Reggae en Español
+Reggae Fusion
+Reggaeton y Hip-Hop (Latin)
+Regional Mexicano (Latin)
+Regstep (Dance)
+Relaxation (New Age)
+Renaissance (Classical)
+Rhythm Blues
+Rock & Roll
+Rockabilly
+Rocksteady (Ska)
+Romantic (early period) (Classical)
+Romantic (later period) (Classical)
+Romantic Flow (Reggae)
+Roots Reggae
+Roots Rock
+Russian Pop
+Sakara
+Salsa y Tropical (Latin)
+Samba (Latin)
+Samba Rock (Latin)
+Sambass (Electronic)
+Sawt
+Schlager (Pop)
+Schranz (Dance)
+Sega
+Seggae
+Semba
+Sertanejo (Country)
+Shoegaze (Alternative)
+Sing-Along (Children’s Music)
+Singer/Songwriter (Rock)
+Skweee (Electronic)
+Smooth Jazz
+Soca
+Soca (Latin)
+Soft Rock (Pop)
+Son (Latin)
+Sonata (Classical)
+Sophisti-Pop
+Soukous
+Soul
+Soul Blues
+Sound Art (Electronic)
+Soundscape Composition (Electronic)
+Soundtrack
+Southern Gospel
+Southern Rock
+Southern Soul
+Space Age Pop
+Space House (Pop)
+Space Rock (Electronic)
+Spanish Reggae
+Spazzcore (Rock)
+Speed Garage (Electronic)
+Speedcore (Dance)
+Spoken Word
+St. Louis Blues
+St. Louis Hip Hop
+Standards (Vocal)
+Stand-up Comedy
+Steampunk (Alternative)
+Stoner Metal (Rock)
+Stories (Children’s Music)
+String Quartet (Classical)
+Sung Poetry  (Folk)
+Sunshine Pop
+Suomisaundi (Dance)
+Surf (Rock)
+Surf Pop
+Swamp Blues
+Swing (Easy Listening)
+Swing House (Dance)
+Symphonic (Classical)
+Symphony (Classical)
+Synthcore (Electronic)
+Synthpop
+Synthpop (Electronic)
+Synthpunk (Electronic)
+Taarab
+Taiwanese Pop
+Tape Music (Electronic)
+Tech HouseTribal House (Dance)
+Tech Trance (Dance)
+Technical Death Metal
+Techno (Dance)
+Techno-Dnb (Dance)
+Techno-Folk
+Technopop (Dance)
+Techstep (Electronic)
+Tecno Brega (Dance)
+Tecnobrega (Latin)
+Teen Pop
+Tejano (Latin)
+Terrorcore (Dance)
+Texas Blues
+Texas County
+Tex-Mex
+Tex-Mex (Rock)
+Thai Pop
+Thanksgiving (Holiday)
+Thrash Metal
+Timba (Latin)
+Time Lord Rock (Rock)
+Toytown Techno (Dance)
+Trad Jazz
+Traditional Bluegrass (Country)
+Traditional Celtic
+Traditional Country
+Traditional Folk
+Traditional Gospel
+Traditional Pop (Vocal)
+Traditional Pop Music
+Trance (Dance)
+Trap (Dance)
+Travel (New Age)
+Trip Hop (Electronic)
+Trip-hop (Rock)
+Tropicalia (Latin)
+Truck-Driving Country
+Turbofolk (Electronic)
+Turkish Pop
+Turntablism (Hip-Hop/Rap)
+TV Soundtrack
+TV Themes (Comedy)
+Twin Cities Hip Hop
+Twoubadou (Latin)
+UK Garage (Electronic)
+UK Hard House (Dance)
+Uk Hardcore (Dance)
+Underground Rap
+Uplifting Trance (Dance)
+Urban Blues
+Urban Cowboy (Country)
+US Garage (Dance)
+Vandeville (Blues)
+Vaudeville (Comedy)
+Video Game Music (Electronic)
+Vispop
+Vocal House (Dance)
+Vocal Jazz
+Vocal Pop
+Vocal Trance (Dance)
+Wedding Music (Classical)
+West Coast Blues
+West Coast Rap
+Western Swing (Country)
+Witch House (Industrial)
+Wonky Pop
+Worldbeat
+Yorkshire Bleeps and Bass (Electronic)
+Zouglou
+Zouk (Latin)
+Zouk-Lambada (Latin)
+Zydeco
+Zydeco (Blues)
+Zydeco (Country)

@@ -170,3 +170,10 @@ html, body{
 	margin-top: 2em;
 	margin-bottom: 4em;
 }
+#profile-left{
+	float:left;
+}
+#profile-right{
+	float: left;
+	margin-left: 100px;
+}
