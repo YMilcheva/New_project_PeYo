@@ -28,6 +28,13 @@
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="" method="post">
                             <h3 class="text-center text-secondary">Login</h3>
+                            <?php 
+                            	if (isset($_SESSION['alert_message']) && strlen($_SESSION['alert_message']) > 2){
+                            		echo $_SESSION['alert_message'];
+                            		unset($_SESSION['alert_message']);                      		
+                            	}
+
+                            ?>
                             <div class="form-group">
                                 <label for="username" class="text-secondary">Username:</label><br>
                                 <input type="text" name="username" id="username" class="form-control">
@@ -60,10 +67,12 @@
 								header("location: welcome.php");	
 								exit;					
 							} else {
-								echo '<h3 class="text-center text-secondary">Wrong username or password. Try again!</h3>';
+								$_SESSION['alert_message'] = '<h3 class="text-center text-secondary">Wrong username or password. Try again!</h3>';
+								header("location: login.php");	
+								exit;	
 							}
-						} else {
-							echo '<h3 class="text-center text-secondary">Error: ' . mysqli_error($conn) . '</h3>';
+					} else {
+							$_SESSION['alert_message'] = '<h3 class="text-center text-secondary">Error: ' . mysqli_error($conn) . '</h3>';
 					}
             	}
             ?>

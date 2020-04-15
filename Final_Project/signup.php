@@ -1,5 +1,6 @@
 
 <?php
+	session_start();
 	include 'functions/db_connect.php';
 	include  'functions/functions.php';
 	$siteTitle = 'Sign Up :: Music is passion!!!';
@@ -73,7 +74,9 @@
 						$insert_query = "INSERT INTO users(`user_username`, `user_password`, `user_name_first`, `user_name_second`, `user_name_email`, `user_name_role`, `user_name_date_created`, `user_name_date_deleted`) VALUES ('" . $register_data[0] . "','" . password_hash($register_data[1], PASSWORD_BCRYPT) . "','" . $register_data[3] . "','" . $register_data[4] . "','" . $register_data[5] . "',1,'" . date("Y-m-d H:i:s") . "',null)";
 						$result = mysqli_query($conn, $insert_query); 
 						if ($result) { 
-							echo '<h3 class="text-center text-secondary">Your registration is successfull! You can now log in!</h3>';							
+							$_SESSION['alert_message'] = '<h3 class="text-center text-secondary">Your registration is successfull! You can now log in!</h3>';
+							header("location: login.php");	
+							exit;
 						} else { 
 							$error = mysqli_error($conn);
 							if (strpos($error, 'Duplicate entry') !== false) {	
