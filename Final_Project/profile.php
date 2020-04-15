@@ -1,4 +1,5 @@
 <?php
+	include 'functions/db_connect.php';
 	session_start();
 	$siteTitle = 'Music is your passion ' . $_SESSION['user_name_first'] . '! Your profile page!';
 	include 'files/header.php';
@@ -19,6 +20,7 @@
 <div id="song-content">
 	<div id="text">
 		<h2>Thank you for you being here, <?php echo $_SESSION['user_name_first'] ?>! This is your profile page.</h2>
+<<<<<<< Updated upstream
 		<h3>Your personal information</h3>
 		<ul>
 			<li>Name: <?php echo $_SESSION['user_name_first'] . ' ' . $_SESSION['user_name_second'] ?> <a href="profle-edit-name.php">Edit</a></li>
@@ -35,6 +37,55 @@
 			<li>Number of uploaded songs: 0</li>
 			<li><a href="#">See All</a></li>
 		</ul>
+=======
+		<div id="profile-left">
+			<h3>Your personal information</h3>
+			<ul>
+				<li>Name: <?php echo $_SESSION['user_name_first'] . ' ' . $_SESSION['user_name_second'] ?> <a href="profle-edit-name.php">Edit</a></li>
+				<li>Email: <?php echo $_SESSION['user_mail'] ?></li>
+				<li>You are with us since <?php echo $_SESSION['user_date_created'] ?></li>
+				<li>You can edit your image - <a href="profle-edit-image.php">Here</a></li>
+				<li><a href="password-edit.php">Edit your password</a></li>
+			</ul>	
+			<h3>Downloads</h3>
+			<ul>
+				<?php 
+					$sql = "SELECT COUNT(download_song) as downloads FROM downloads WHERE download_user = " . $_SESSION['user_id'];
+					$result = mysqli_query($conn, $sql);
+					if ($result) {
+						$row = mysqli_fetch_assoc($result);
+        				$downloaded_songs_count = $row['downloads'];
+        			} else {
+						echo '<h3 class="text-center text-secondary">Error: ' . mysqli_error($conn) . '</h3>';			
+					}
+				?>
+				<li>Number of downloaded songs: <?php echo $downloaded_songs_count ?></li>
+				<?php 
+					echo '<li><a href="downloaded-list.php?id=' . $_SESSION['user_id'] . '">See All</a></li>';
+				?>
+			</ul>
+			<h3>Uploads</h3>
+			<ul>
+				<?php 
+					$sql = "SELECT COUNT(song_id) as songs_count FROM songs WHERE song_uploader = " . $_SESSION['user_id'];
+					$result = mysqli_query($conn, $sql);
+					if ($result) {
+						$row = mysqli_fetch_assoc($result);
+        				$uploaded_songs_count = $row['songs_count'];
+        			} else {
+						echo '<h3 class="text-center text-secondary">Error: ' . mysqli_error($conn) . '</h3>';			
+					}
+				?>
+				<li>Number of uploaded songs: <?php echo $uploaded_songs_count ?></li>
+				<?php 
+					echo '<li><a href="uploaded-list.php?id=' . $_SESSION['user_id'] . '">See All</a></li>';
+				?>
+			</ul>
+		</div>
+		<div id="profile-right">
+			<img width="300px" src=<?php echo '"' . $_SESSION['user_image'] . '"'?>>
+		</div>
+>>>>>>> Stashed changes
 	</div>
 </div>
 <?php 

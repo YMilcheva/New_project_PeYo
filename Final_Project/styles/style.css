@@ -169,4 +169,17 @@ html, body{
 #login-form{
 	margin-top: 2em;
 	margin-bottom: 4em;
+<<<<<<< Updated upstream
+=======
+}
+#profile-left{
+	float:left;
+}
+#profile-right{
+	float: left;
+	margin-left: 100px;
+}
+.checked_stars{
+	color: orange;
+>>>>>>> Stashed changes
 }
