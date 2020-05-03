@@ -55,10 +55,11 @@
 		}				
 	}
 
-	function return_songs_info($order, $direction, $conn, $limit, $offset){
+	function return_songs_info($order, $direction, $conn, $limit, $offset, $search){
 		$order = return_order_variable($order); 
 		$direction = return_order_direction($direction);
-		$sql = "SELECT 
+		if (strlen($search) == 0){
+			$sql = "SELECT 
 			songs.song_id, 
     		songs.song_name, 
 		    GROUP_CONCAT(DISTINCT singers.singer_name ORDER BY songs_singers.singer_id) AS singers, 
@@ -68,17 +69,42 @@
 		   	(SELECT COUNT(downloads.download_song) FROM downloads WHERE download_song = songs.song_id) as count_downloads,
 		    (SELECT COUNT(ratings.rating_number) FROM ratings WHERE ratings.rating_song = songs.song_id) as count_ratings,
 		    (SELECT AVG(ratings.rating_number) FROM ratings WHERE ratings.rating_song = songs.song_id) as average_rating
-		FROM songs JOIN songs_singers ON songs.song_id = songs_singers.song_id 
+			FROM songs JOIN songs_singers ON songs.song_id = songs_singers.song_id 
 				   JOIN singers ON songs_singers.singer_id = singers.singer_id 
 		           JOIN users ON songs.song_uploader = users.user_id 
 		           JOIN songs_genres ON songs_singers.song_id = songs_genres.song_id 
 		           JOIN genres ON songs_genres.genre_id = genres.genre_id 
 		           LEFT JOIN downloads ON songs.song_id = downloads.download_song 
 		           LEFT JOIN ratings ON songs.song_id = ratings.rating_song
-		WHERE songs.song_soft_delete IS NULL 
-		GROUP BY songs.song_name 
-		ORDER BY " . $order . ' ' . $direction . " LIMIT " . $limit . "
-        OFFSET " . $offset;
+			WHERE songs.song_soft_delete IS NULL 
+			GROUP BY songs.song_name 
+			ORDER BY " . $order . ' ' . $direction . " LIMIT " . $limit . "
+	        OFFSET " . $offset;
+		} else {
+			$sql = "SELECT 
+			songs.song_id, 
+    		songs.song_name, 
+		    GROUP_CONCAT(DISTINCT singers.singer_name ORDER BY songs_singers.singer_id) AS singers, 
+		    songs.song_date, 
+		    users.user_username, 
+		    GROUP_CONCAT(DISTINCT genres.genre_name ORDER BY songs_genres.genre_id) AS genres,
+		   	(SELECT COUNT(downloads.download_song) FROM downloads WHERE download_song = songs.song_id) as count_downloads,
+		    (SELECT COUNT(ratings.rating_number) FROM ratings WHERE ratings.rating_song = songs.song_id) as count_ratings,
+		    (SELECT AVG(ratings.rating_number) FROM ratings WHERE ratings.rating_song = songs.song_id) as average_rating
+			FROM songs JOIN songs_singers ON songs.song_id = songs_singers.song_id 
+				   JOIN singers ON songs_singers.singer_id = singers.singer_id 
+		           JOIN users ON songs.song_uploader = users.user_id 
+		           JOIN songs_genres ON songs_singers.song_id = songs_genres.song_id 
+		           JOIN genres ON songs_genres.genre_id = genres.genre_id 
+		           LEFT JOIN downloads ON songs.song_id = downloads.download_song 
+		           LEFT JOIN ratings ON songs.song_id = ratings.rating_song
+			WHERE songs.song_soft_delete IS NULL 
+			AND (singers.singer_name LIKE '%" . $search . "%' OR songs.song_name LIKE '%" . $search . "%' OR genres.genre_name LIKE '%" . $search . "%') 
+			GROUP BY songs.song_name 
+			ORDER BY " . $order . ' ' . $direction . " LIMIT " . $limit . "
+	        OFFSET " . $offset;
+		}
+		
 		$result = mysqli_query($conn, $sql);
 		$songs = array();
 		$song_keys = array();

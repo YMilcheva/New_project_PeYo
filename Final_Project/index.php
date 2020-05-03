@@ -41,21 +41,22 @@
 		$page_no = 1;
 	}	
 ?>
-	<div id="main_title">
-		<div id="main_image">
+<div id="main_title">
+	<div id="main_image">
 	<?php
 		include 'files/main-image.php';	
 	?>		
-		</div>
-		<div id="main_text">
-			<h1>Music is passion</h1>
-			<h3>Listen! Share! Rate!</h3>
-		</div>	
 	</div>
+	<div id="main_text">
+		<h1>Music is passion</h1>
+		<h3>Listen! Share! Rate!</h3>
+	</div>	
+</div>
 <div id="song-content">
 	<div id="text">
 		<h2>Enjoy!!!</h2>
 		<p>
+		<div class="table-responsive">
 		<table class="table table-striped">
 		  <thead>
 		    <tr>
@@ -75,7 +76,7 @@
 				$total_records_per_page = 10;
 				$total_no_of_pages = ceil($_SESSION['songs_count'] / $total_records_per_page);				
 				$offset = ($page_no - 1) * $total_records_per_page;	
-						  		
+
 		  		if (isset($_GET['order'])){
 		  			$order = $_GET['order']; 
 		  		} else {
@@ -88,7 +89,7 @@
 		  			$direction = 0;
 		  		}
 
-		  		$temp_array = return_songs_info($order, $direction, $conn, $total_records_per_page, $offset);
+		  		$temp_array = return_songs_info($order, $direction, $conn, $total_records_per_page, $offset, "");
 		  		$songs = $temp_array[0];
 		  		$song_keys = $temp_array[1];
 				print_song_table($songs, $song_keys, $offset);	
@@ -99,7 +100,8 @@
 		<?php
 		  	print_pagination($page_no, $total_no_of_pages, $direction, $order);
 		?>	
-		</div>	   
+		</div>	
+		</div>   
 	</div>
 </div>
 <?php 

@@ -1,4 +1,5 @@
 <?php
+	ob_start();
 	session_start();
 	include 'functions/db_connect.php'; 
 	include 'functions/functions.php'; 
@@ -40,29 +41,68 @@
 	    $page_no = 1;
 	}
 ?>
-	<div id="main_title">
-		<div id="main_image">
+<div id="main_title">
+	<div id="main_image">
 	<?php
 		include 'files/main-image.php';	
 	?>		
-		</div>
-		<div id="main_text">
-			<h1>Music is passion</h1>
-			<h3>Listen! Share! Rate!</h3>
-		</div>	
 	</div>
+	<div id="main_text">
+		<h1>Music is passion</h1>
+		<h3>Listen! Share! Rate!</h3>
+	</div>	
+</div>
 <div id="song-content">
 	<div id="text">
-		<h2> Hey, <?php echo $_SESSION['user_name_first'] ?>! If you have something new to upload, you can do it <a href="upload.php">here</a> or check our song list below</h2><p>
+		<h2> Hey, <?php echo $_SESSION['user_name_first'] ?>! Check our song list below or press the Upload button!</h2><p>
 		<?php 
         	if (isset($_SESSION['alert_message']) && strlen($_SESSION['alert_message']) > 2){
         		echo $_SESSION['alert_message'];
         		unset($_SESSION['alert_message']);                         		
         	}
         ?>
+       <div class="search_nav">			
+			<div class="text-left">	
+				<a href="upload.php" class="btn btn-primary btn-md active" role="button" aria-pressed="true">Upload</a>
+			</div> 
+			<form method="post">
+			<div class="text-right">
+				<div class="text-left">
+					<input type="text" name="search_string" class="form-control" placeholder="Search...">
+				</div>
+				<div class="text-right">	
+					<input type="submit" class="btn btn-success btn-md" name="search" value="SEARCH">
+				</div>		
+			</div>								
+		</form>
+			<?php
+				if (isset($_POST['search'])){
+					$search = $_POST['search_string'];
+				} else {
+					$search = "";
+				}
+			?>
+		</div>
+		<div class="table-responsive">
 		<table class="table table-striped">
 		  <thead>
 		    <tr>
+		    	<?php 
+		    		if (strlen($search) > 0){
+		    			?>
+		      <th scope="col">#</th>
+		      <th scope="col">Song Name</th>
+		      <th scope="col">Performer</th>
+		      <th scope="col">Genre</th>
+		      <th scope="col">Date of uploading</th>
+		      <th scope="col">Uploader</th>
+		      <th scope="col">Download counts</th>
+		      <th scope="col">Song rating</th>
+		      <th scope="col">Rate the song</th>
+		      <th scope="col">Download</th>
+		    			<?php
+		    		} else {		    		
+		    	?>
 		      <th scope="col">#</th>
 		      <th scope="col">Song Name <a href="welcome.php?order=1&dir=1#text">&uarr;</a> <a href="welcome.php?order=1&dir=0#text">&darr;</a></th>
 		      <th scope="col">Performer <a href="welcome.php?order=2&dir=1#text">&uarr;</a> <a href="welcome.php?order=2&dir=0#text">&darr;</a></th>
@@ -73,15 +113,23 @@
 		      <th scope="col">Song rating <a href="welcome.php?order=7&dir=1#text">&uarr;</a> <a href="welcome.php?order=7&dir=0#text">&darr;</a></th>
 		      <th scope="col">Rate the song</th>
 		      <th scope="col">Download</th>
+		      <?php 
+		      	}
+		      ?>
 		    </tr>
 		  </thead>
 		  <tbody>
 		  	<?php 
 	        	if (isset($_SESSION['songs_count']) == false){
-	        		$_SESSION['songs_count'] = return_songs_count($conn);	
+	        		$_SESSION['songs_count'] = return_songs_count($conn, $search);	        		
 	        	}
-
-	        	$total_records_per_page = 10;
+	        	if (strlen($search) > 0) {
+	        		$page_no = 1;
+	        		$total_records_per_page = $_SESSION['songs_count'];
+	        	} else {
+	        		$total_records_per_page = 10;
+	        	}
+	        	
 				$total_no_of_pages = ceil($_SESSION['songs_count'] / $total_records_per_page);				
 				$offset = ($page_no - 1) * $total_records_per_page;
 									
@@ -97,18 +145,25 @@
 		  			$direction = 0;
 		  		}
 
-		  		$temp_array = return_songs_info($order, $direction, $conn, $total_records_per_page, $offset);
+		  		$temp_array = return_songs_info($order, $direction, $conn, $total_records_per_page, $offset, $search);
 		  		$songs = $temp_array[0];
 		  		$song_keys = $temp_array[1];	
+		  		if (strlen($search) > 0){
+		  			echo '<p><h2>Search results for "' . $search . '"</h2></p>';
+		  		}
 		  		print_song_table($songs, $song_keys, $offset);	
 		  	?>		  	 
 		  	</tbody>
 		</table>
 		<div class="current_page">
 		<?php
-		  	print_pagination($page_no, $total_no_of_pages, $direction, $order);
+			if (strlen($search) == 0){
+				print_pagination($page_no, $total_no_of_pages, $direction, $order);
+			}		  	
 		?>	
 		</div>	   
+	</div>
+		
 	</div>
 </div>
 <?php 

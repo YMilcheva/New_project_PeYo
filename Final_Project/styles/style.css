@@ -15,7 +15,7 @@ html, body{
   background:#E2495B;
 }
 
-.nav-link, .navbar-brand {
+.navbar.navbar-expand-sm.navbar-light a {
   color: #fff;
   cursor: pointer;
 }
@@ -111,12 +111,12 @@ html, body{
 }
 #main_title h1{
 	margin-top: 20px;
-	font-size: 8em;
+	font-size: 8vw;
 	font-style: italic;
 	font-family: "Times New Roman", Times, serif;
 }
 #main_title h3{
-	font-size: 5em;
+	font-size: 5vw;
 	font-style: italic;
 }
 #main_image{
@@ -134,6 +134,7 @@ html, body{
 	width: 70%;
 	height: 100%;
 	float: right;
+	word-wrap: break-word;
 }
 #song-content{
 	border-top: 2em solid black;
@@ -149,6 +150,10 @@ html, body{
 	margin-right: 30px;
 	margin-top: 30px;	
 	min-height: 100%;
+	overflow: auto;
+}
+#text h2{
+	font-size: 2vw;
 }
 #footer{
 	margin-top: 30px;
@@ -166,7 +171,50 @@ html, body{
 	margin-bottom: 30px;
 	margin-right: 30px;
 }
+.text-left{
+	float: left;
+}
+.text-right{
+	float: right;
+	margin-left: 10px;
+}
 #login-form{
 	margin-top: 2em;
 	margin-bottom: 4em;
+}
+#profile-left{
+	float:left;
+	height: auto;
+}
+#profile-right{
+	float: left;
+	margin-left: 100px;
+	object-fit:contain;
+}
+.checked_stars{
+	color: orange;
+}
+.pagination a{
+	padding-left: 50px; 	
+}
+
+.current_page{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-top: dotted 1px #000000;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.current_page ul, p{
+	float: left;
+	margin: 0;
+    padding: 0;
+}
+.col-md-2 {
+	float: left;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.margin-top-20{
+	margin-top:20px;
 }

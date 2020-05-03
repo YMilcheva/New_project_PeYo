@@ -1,4 +1,5 @@
 <?php
+    ob_start();
 	session_start();
 	include 'functions/db_connect.php'; 
 	$siteTitle = 'Music is your passion ' . $_SESSION['user_name_first'] . '! Edit your password!';
@@ -18,8 +19,14 @@
 		</div>	
 	</div>
 <div id="song-content">
-	<div id="text">
+	<div id="text">        
 		<h2><?php echo $_SESSION['user_name_first'] ?>, you can edit your password here:</h2>
+        <?php 
+            if (isset($_SESSION['alert_message']) && strlen($_SESSION['alert_message']) > 2){
+                echo $_SESSION['alert_message'];
+                unset($_SESSION['alert_message']);                              
+            }
+        ?>  
 		<div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
@@ -45,13 +52,19 @@
             </div>
             <?php
             	if(isset($_POST['submit'])){
-            		if (isset($_POST['current_password']) && strlen($_POST['current_password']) > 1 && isset($_POST['new_password']) && strlen($_POST['new_password']) && isset($_POST['confirm_password']) && strlen($_POST['confirm_password']) > 1){
+            		if (isset($_POST['current_password']) && strlen($_POST['current_password']) > 1 && isset($_POST['new_password']) && strlen($_POST['new_password']) && isset($_POST['confirm_password']) && strlen($_POST['confirm_password'])){
                         if (strlen($_POST['current_password']) < 8 || strlen($_POST['new_password']) < 8 || strlen($_POST['confirm_password']) < 8){
-                            echo '<h3 class="text-center text-secondary">Error: Your Password is too short</h3>';
+                            $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Error: Your Password is too short</h3>';
+                            header("Location: password-edit.php");
+                            exit;
                         } elseif (strlen($_POST['current_password']) > 15 || strlen($_POST['new_password']) > 15 || strlen($_POST['confirm_password']) > 15){
-                            echo '<h3 class="text-center text-secondary">Error: Your Password is too long</h3>';
+                            $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Error: Your Password is too long</h3>';
+                            header("Location: password-edit.php");
+                            exit;
                         } elseif ($_POST['new_password'] != $_POST['confirm_password']){
-                             echo '<h3 class="text-center text-secondary">The new password and confirm password you entered are not the same!</h3>';
+                            $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Error: The new password and confirm password you entered are not the same!</h3>';
+                            header("Location: password-edit.php");
+                            exit;
                         } else {
                             $sql = "SELECT user_password FROM users WHERE user_username = '" . $_SESSION['user_name'] . "'";
                             $result = mysqli_query($conn, $sql);
@@ -61,19 +74,29 @@
                                     $sql = "UPDATE users SET user_password = '" . password_hash($_POST['confirm_password'], PASSWORD_BCRYPT) . "' WHERE user_username = '" . $_SESSION['user_name'] . "'";
                                     $result = mysqli_query($conn, $sql); 
                                     if ($result) { 
-                                        echo '<h3 class="text-center text-secondary">Your password has been changed!</h3>';
+                                         $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-success">Your password has been changed!</h3>';
+                                            header("Location: password-edit.php");
+                                            exit;
                                     } else { 
-                                         echo '<h3 class="text-center text-secondary">Error: ' . mysqli_error($conn) . '</h3>';
+                                        $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Error: ' . mysqli_error($conn) . '</h3>';
+                                        header("Location: password-edit.php");
+                                        exit;
                                     }                                   
                                 } else {
-                                    echo '<h3 class="text-center text-secondary">The password you entered was not correct!</h3>';
+                                    $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Error: The password you entered was not correct!</h3>';
+                                    header("Location: password-edit.php");
+                                    exit;
                                 }
                             } else {
-                                echo '<h3 class="text-center text-secondary">Error: ' . mysqli_error($conn) . '</h3>';
+                                $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Error: ' . mysqli_error($conn) . '</h3>';
+                                header("Location: password-edit.php");
+                                exit;
                             }
                         }
                     } else {
-                         echo '<h3 class="text-center text-secondary">Please fill all fields</h3>';
+                        $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Please fill all fields</h3>';
+                        header("Location: password-edit.php");
+                        exit;
                     }           			
             	}
             ?>

@@ -1,4 +1,5 @@
 <?php
+    ob_start();
 	session_start();
 	include 'functions/db_connect.php'; 
 	$siteTitle = 'Music is your passion ' . $_SESSION['user_name_first'] . '! Edit your personal data!';
@@ -20,6 +21,12 @@
 <div id="song-content">
 	<div id="text">
 		<h2><?php echo $_SESSION['user_name_first'] ?>, you can edit your personal data here:</h2>
+        <?php 
+            if (isset($_SESSION['alert_message']) && strlen($_SESSION['alert_message']) > 2){
+                echo $_SESSION['alert_message'];
+                unset($_SESSION['alert_message']);                              
+            }
+        ?>  
 		<div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
@@ -52,10 +59,14 @@
             				header("location: welcome.php");	
 							exit;		
             			} else {
-            				echo '<h3 class="text-center text-secondary">Error: ' . mysqli_error($conn) . '</h3>';
+                            $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Error: ' . mysqli_error($conn) . '</h3>';
+                            header("Location: profle-edit-name.php");
+                            exit;
             			}
             		} else {
-            			echo '<h3 class="text-center text-secondary">Please fill all fields!</h3>';
+                        $_SESSION['alert_message'] = '<h3 class="text-center text-secondary text-danger">Please fill all fields!</h3>';
+                        header("Location: profle-edit-name.php");
+                        exit;
             		}	
             	}
             ?>
